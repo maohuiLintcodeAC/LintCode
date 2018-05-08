@@ -21,7 +21,7 @@ public class Solution {
 
             // 如果当前位置比之前定位的i要 矮  即可跳过
             if (height[i] < height[currentI]) continue;
-            // 如果当前位置比之前定位的 结束点要矮，即可跳过
+            // 如果当前位置比之前定位的 结束点要矮，则跳过[i, currentJ)
             else if (height[i] < height[currentJ] && i < currentJ) {
                 jj = currentJ;
             }
