@@ -20,8 +20,6 @@ package leetcode_007;
  */
 public class Solution {
     public int reverse(int x) {
-        int result;
-
         String s = String.valueOf(x);
         StringBuffer sb = new StringBuffer();
         if (x < 0) {
@@ -36,12 +34,8 @@ public class Solution {
             if (!start) continue;
             sb.append(s.charAt(i));
         }
-        try {
-            result = Integer.valueOf(sb.toString());
-        } catch (Exception e) {
-            result = 0;
-        }
-        return result;
+
+        return Integer.valueOf(sb.toString());
     }
 
     public static void main(String[] args) {
